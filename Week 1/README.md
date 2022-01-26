@@ -1,4 +1,4 @@
-## Critigue of a connected App: [Gather](https://www.gather.town) | Jan 25
+## Jan 25 | Critigue of a connected App: [Gather](https://www.gather.town)
 #### A better way to hang out
 
 Gather is a virtual meeting platform, whose virtual rooms have a unique dimension. The application allows admins to create fully customizable spaces where they can hold their meetings or events and invite guests to join their space. The invited users, instead of seeing the gallery of their colleague’s faces, as is the case in traditional videoconferences, see a two-dimensional space with freely moving avatars. People can join different conversations by coming closer in space to specific avatars.
