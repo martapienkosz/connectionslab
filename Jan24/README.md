@@ -1,7 +1,7 @@
 ## Jan 27 | Simple Webpage[Gather](https://www.gather.town)
 &nbsp;
 ### Wireframe
-![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/6.png)
+![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/6.jpg)
 &nbsp;
 
 ### Process
