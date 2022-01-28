@@ -1,10 +1,10 @@
 ## Jan 27 | Simple Webpage[Gather](https://www.gather.town)
 &nbsp;
-#### Wireframe
-![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/1.png)
+### Wireframe
+![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/6.png)
 &nbsp;
 
-#### Process
+### Process
 I started building on the html file by pasting the exerpts from one of my essays to distinct divs and deciding on the text size. Nextly I added some formating by changing the fonts, background colors and created the very first flex box. I wanted to implement two separate columns - one for the text and the other for side notes. I hate when the text runs for the whole width of the screen and figured it would slit it up nicely.
 
 ![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/1.png)![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/2.png) 
