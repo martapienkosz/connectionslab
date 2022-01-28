@@ -6,10 +6,7 @@ XYZ
 #### Process
 I started building on the html file by pasting the exerpts from one of my essays to distinct divs and deciding on the text size. Nextly I added some formating by changing the fonts, background colors and created the very first flex box. I wanted to implement two separate columns - one for the text and the other for side notes. I hate when the text runs for the whole width of the screen and figured it would slit it up nicely.
 
-![This is an image](hhttps://github.com/martapienkosz/connectionslab/tree/main/Jan24/doc/1.png)
-https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/1.png
-
-<img src= "https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/1.png" width= "400"> <img src= "https://github.com/martapienkosz/connectionslab/tree/main/Jan24/doc/2.png" width= "400">
+<img src= "https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/1.png" width= "500"> <img src= "https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/2.png" width= "500">
 
 Here is the exerpts from HTML:
 
@@ -47,7 +44,7 @@ and CSS.
 }
 ```
 
-<img src= "https://github.com/martapienkosz/connectionslab/tree/main/Jan24/doc/3.png" width= "400">
+<img src= "https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/3.png" width= "500">
 
 In the `container__info-itemleft` class I added pictures here and there and embeded a video using `<iframe>` command. At the very bottom I have included a picture gallery build up from two flex boxes, as outlined in my wireframe.
 
@@ -69,7 +66,7 @@ I have also added a `theme-container` with a `theme-container__item` that would 
 
 Lastly I have implemented a simple nav bar with two icons. Ideally these should link to the home page and info pages.
 
-<img src= "https://github.com/martapienkosz/connectionslab/tree/main/Jan24/doc/4.png" width= "400"> <img src= "https://github.com/martapienkosz/connectionslab/tree/main/Jan24/doc/5.png" width= "400">
+<img src= "https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/4.png" width= "500"> <img src= "https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/5.png" width= "500">
 
 ### Cool features
 - I have added an icon: `<link rel="shortcut icon" href="images/logo.ico"/>`
