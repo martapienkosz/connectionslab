@@ -7,8 +7,9 @@ XYZ
 I started building on the html file by pasting the exerpts from one of my essays to distinct divs and deciding on the text size. Nextly I added some formating by changing the fonts, background colors and created the very first flex box. I wanted to implement two separate columns - one for the text and the other for side notes. I hate when the text runs for the whole width of the screen and figured it would slit it up nicely.
 
 ![This is an image](hhttps://github.com/martapienkosz/connectionslab/tree/main/Jan24/doc/1.png)
+https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/1.png
 
-<img src= "https://github.com/martapienkosz/connectionslab/tree/main/Jan24/doc/1.png" width= "400"> <img src= "https://github.com/martapienkosz/connectionslab/tree/main/Jan24/doc/2.png" width= "400">
+<img src= "https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/1.png" width= "400"> <img src= "https://github.com/martapienkosz/connectionslab/tree/main/Jan24/doc/2.png" width= "400">
 
 Here is the exerpts from HTML:
 
