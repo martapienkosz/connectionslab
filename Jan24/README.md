@@ -11,3 +11,79 @@ Although users can walk around the space and join conversations freely, they can
 
 #### What would you like to do differently?
 To some extent, I believe that Gather is a two-dimensional version of what Mark Zuckerber 's Metaverse is about to become. A free, open space where people can communicate and meet virtually. The main difference, however, is that the space offered by Zuckerberg, using the VR technology, may seem much more natural and organic than the Gather proposition. I think immersion is covered very briefly in this combined app and the next step might be to focus on how to make these custom spaces feel much more real.
+
+
+## Jan 27 | Simple Webpage[Gather](https://www.gather.town)
+#### Wireframe
+
+XYZ
+
+#### Process
+I started building on the html file by pasting the exerpts from one of my essays to distinct divs and deciding on the text size. Nextly I added some formating by changing the fonts, background colors and created the very first flex box. I wanted to implement two separate columns - one for the text and the other for side notes. I hate when the text runs for the whole width of the screen and figured it would slit it up nicely.
+
+<img src= "https://github.com/martapienkosz/interactivemedia/blob/master/Media/1.png" width= "400"> <img src= "https://github.com/martapienkosz/interactivemedia/blob/master/Media/2.png" width= "400">
+
+Here is the exerpts from HTML:
+
+```
+<div class="container">
+  <div class="container__info-itemright">
+    <h3>Description</h3>
+    <h4>text</h4>
+  </div>
+  <div class="container__info-itemleft">
+    <h3>Author</h3>
+    <h4>January 28, 2022</h4>
+  </div>
+</div>
+```
+
+and CSS.
+
+```
+.container{
+  margin-top: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.container__info-itemright {
+  width: 65%;
+  margin: 2% 5% 0% 3%;
+}
+
+.container__info-itemleft {
+  width: 35%;
+  margin: 2% 3% 0% 5%;
+}
+```
+
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+
+In the `container__info-itemleft` class I added pictures here and there and embeded a video using `<iframe>` command. At the very bottom I have included a picture gallery build up from two flex boxes, as outlined in my wireframe.
+
+/img
+
+I have also added a `theme-container` with a `theme-container__item` that would resize depeding on the `theme-container` dimnensions. For that I have added a `object-fit: cover;` property
+
+```
+.theme-container {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.theme-container__item {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+```
+
+Lastly I have implemented a simple nav bar with two icons. Ideally these should link to the home page and info pages.
+
+### Cool features
+- I have added an icon: `<link rel="shortcut icon" href="images/logo.ico"/>`
+- I have deleted default a tag formating `a {text-decoration: none;}`
+- I have hidden the scroll line `body::-webkit-scrollbar {display: none;} 
