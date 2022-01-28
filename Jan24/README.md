@@ -67,7 +67,9 @@ I have also added a `theme-container` with a `theme-container__item` that would 
 
 Lastly I have implemented a simple nav bar with two icons. Ideally these should link to the home page and info pages.
 
-![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/4.png) ![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/5.png) 
+![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/4.png)
+&nbsp;
+![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/5.png) 
 
 ### Cool features
 - I have added an icon: `<link rel="shortcut icon" href="images/logo.ico"/>`
