@@ -1,4 +1,4 @@
-## Jan 27 | Simple Webpage[Gather](https://www.gather.town)
+## Jan 27 | Simple [Webpage](https://martapienkosz.github.io/connectionslab/Jan24/index.html)
 &nbsp;
 ### Wireframe
 ![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/6.jpg)
