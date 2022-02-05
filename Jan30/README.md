@@ -1,4 +1,4 @@
-## Jan 30 | Make things happen on the [page](https://martapienkosz.github.io/connectionslab/Jan24/index.html)
+## Jan 30 | Make things happen on the [page](https://martapienkosz.github.io/connectionslab/Jan30/index.html)
 &nbsp;
 
 ### Process
