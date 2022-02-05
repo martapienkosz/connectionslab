@@ -6,3 +6,4 @@ Week one assignments | Jan 24 - 29
 - HTML & CSS [Website](https://martapienkosz.github.io/connectionslab/Jan24/index.html) assignment.
 
 Week two assignments | Jan 30 - Feb 6
+- Make things happen on the [page](https://martapienkosz.github.io/connectionslab/Jan30/index.html) & [documentation](https://github.com/martapienkosz/connectionslab/blob/main/Jan30/README.md)
