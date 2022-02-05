@@ -66,7 +66,6 @@ a {
 .theme-container__item {
   height: 100%;
   width: 100%;
-  transition: 1.5s cubic-bezier(0.25, 0.1, 0.25, 1);
   object-fit: cover;
 }
 
@@ -102,4 +101,30 @@ a {
 
 .containerinfo-itemgallery-img {
   width: 45%;
+}
+
+
+
+@media screen and (max-width: 767px)
+{
+  .container__info-itemgallery {
+    display: block;
+    height: 100%;
+  }
+  .container {
+    display: block;
+    height: 100%;
+  }
+
+  .container__info-itemleft {
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+  }
+  .container__info-itemright {
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+  }
+  .containerinfo-itemgallery-img {
+    width: 100%;
+  }
 }
