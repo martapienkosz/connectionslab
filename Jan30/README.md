@@ -1,8 +1,5 @@
 ## Jan 30 | Make things happen on the [page](https://martapienkosz.github.io/connectionslab/Jan24/index.html)
 &nbsp;
-### Wireframe
-![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/6.jpg)
-&nbsp;
 
 ### Process
 For the purposes of this project, I wanted to create an interactive map of Abu Dhabi, where by clicking on a particular location, the user could see my photos taken in that place. I started out by creating an `svg` image in Adobe Illustrator.
@@ -33,7 +30,6 @@ function foundation() {
 
 ```
 ![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan30/doc/2.png)
-![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan30/doc/4.png)
 
 Each of the "imgArray" contains three photos, and by clicking a multiple times on a specific mark, the user can see more photos taken at that location. To enchance UX, I created a `container__appearingtext` with the text "... and again" that appears when the user hovers over the interactive mark.
 
