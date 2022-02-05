@@ -1,19 +1,5 @@
 console. log("hello");
 
-
-window.addEventListener('load', function() {
-    let inputBox = this.document.getElementById("input-box");
-    inputBox.addEventListener('change', function(e) {
-        console.log(e.target.value);
-
-        let listItem = document.createElement('p');
-        listItem.innerHTML = e.target.value;
-        
-        let list = document.getElementById("list");
-        list.appendChild(listItem);
-    })
-})
-
 var imgFoundationArray = new Array();
 
 imgFoundationArray[0] = new Image();
