@@ -13,19 +13,15 @@ Firstly, I searched Wikipedia for data on daily entries to particular Warsaw met
 This is an example of the `key-value` object.
 
 ```
-	"stations": [{
-			"name": "Rondo Daszynskiego",
-			"number": 5467700,
-			"year": 2015
-		},
+"stations": [{
+	"name": "Rondo Daszynskiego",
+	"number": 5467700,
+	"year": 2015
+},
 ```
 
-Then, in JavaScript, I fetched the information from the `JSON file`, created and returned the promise and loged the data. I have then created a for loop that retrives a paragraph with a simple sentence to properly display relevant info on the page.
+Then, in JavaScript, I fetched the information from the `JSON file`, created and returned the promise and loged the data. I have then created a for loop that retrives a paragraph with a simple sentence to properly display relevant info on the page: `stationsItem.textContent = allStations[i].name.concat(" had ", allStations[i].number, " passengers and was constructed in ", allStations[i].year);`.
 
-```
-stationsItem.textContent = allStations[i].name.concat(" had ", allStations[i].number, " passengers and was constructed in ", allStations[i].year);
-
-```
 And here is the work in progress.
 ![img](https://github.com/martapienkosz/connectionslab/blob/main/Feb7/doc/initial.png)
 
