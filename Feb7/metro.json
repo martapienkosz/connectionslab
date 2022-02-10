@@ -1,0 +1,132 @@
+{
+	"stations": [{
+			"name": "Rondo Daszynskiego",
+			"number": 14980,
+			"year": 2015
+		},
+		{
+			"name": "Rondo ONZ",
+			"number": 10340,
+			"year": 2015
+		},
+		{
+			"name": "Swietokrzyska2",
+			"number": 22580,
+			"year": 2015
+		}, {
+			"name": "Nowy Swiat-Uniwersytet",
+			"number": 13023,
+			"year": 2015
+		},
+		{
+			"name": "Centrum Nauki Kopernik",
+			"number": 15394,
+			"year": 2015
+		},
+		{
+			"name": "Stadion Narodowy",
+			"number": 9970,
+			"year": 2015
+		},
+		{
+			"name": "Dworzec Wilenski",
+			"number": 27182,
+			"year": 2015
+		},
+		{
+			"name": "Kabaty",
+			"number": 4980000,
+			"year": 1995
+		},
+		{
+			"name": "Natolin",
+			"number": 4270000,
+			"year": 1995
+		},
+		{
+			"name": "Imielin",
+			"number": 4750000,
+			"year": 1995
+		},
+		{
+			"name": "Stoklosy",
+			"number": 4640000,
+			"year": 1995
+		},
+		{
+			"name": "Ursynow",
+			"number": 3560000,
+			"year": 1995
+		},
+		{
+			"name": "Sluzew",
+			"number": 8020000,
+			"year": 1995
+		},
+		{
+			"name": "Wilanowska",
+			"number": 6990000,
+			"year": 1995
+		},
+		{
+			"name": "Wierzbno",
+			"number": 5780000,
+			"year": 1995
+		},
+		{
+			"name": "Raclawicka",
+			"number": 3580000,
+			"year": 1995
+		},
+		{
+			"name": "Pole Mokotowskie",
+			"number": 5310000,
+			"year": 1995
+		},
+		{
+			"name": "Politechnika",
+			"number": 12710000,
+			"year": 1995
+		},
+		{
+			"name": "Centrum",
+			"number": 20570000,
+			"year": 1998
+		},
+		{
+			"name": "Swietokrzyska",
+			"number": 13200000,
+			"year": 2003
+		},
+		{
+			"name": "Ratusz Arsenal",
+			"number": 11290000,
+			"year": 2003
+		},
+		{
+			"name": "Dworzec Gdanski",
+			"number": 7990000,
+			"year": 2003
+		},
+		{
+			"name": "Plac Wilsona",
+			"number": 4000000,
+			"year": 2006
+		},
+		{
+			"name": "Marymont",
+			"number": 6810000,
+			"year": 2006
+		},
+		{
+			"name": "Wawrzyszew",
+			"number": 2680000,
+			"year": 2008
+		},
+		{
+			"name": "Mlociny",
+			"number": 10760000,
+			"year": 2008
+		}
+	]
+}
