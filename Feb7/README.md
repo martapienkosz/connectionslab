@@ -1,52 +1,37 @@
-## Jan 30 | Make things happen on the [page](https://martapienkosz.github.io/connectionslab/Jan30/index.html)
+## Feb 7 | Brief for [page](https://martapienkosz.github.io/connectionslab/Jan30/index.html)
 &nbsp;
 
+### Idea
+In my first project, I would like to artistically visualize the popularity of various Warsaw metro stations. I'm going to create a svg map of the metro scheme and draw a circle of a specific diameter corresponding to the location of the particular station. The area of each circle will correspond to the number of passengers hoping on the train at each station daily. I'm really curious about the outcome of this algorithmic art and intend it to be visually and mathematically pleasing. The main audience of my website will be people living in Warsaw, as the data may seem more meaningful to them. Nevertheless, I hope interactions and data visualisation will be interesting for a winder NYUAD audience.
+
+![img](https://github.com/martapienkosz/connectionslab/blob/main/Feb7/doc/sketch.png)
+
+
 ### Process
-For the purposes of this project, I wanted to create an interactive map of Abu Dhabi, where by clicking on a particular location, the user could see my photos taken in that place. I started out by creating an `svg` image in Adobe Illustrator.
+Firstly, I searched Wikipedia for data on daily entries to particular Warsaw metro stations. I have found some tables with data for both [1st line](https://pl.wikipedia.org/wiki/Linia_M1_metra_w_Warszawie) and [2nd](https://pl.wikipedia.org/wiki/Linia_M2_metra_w_Warszawie). I created a `JSON` file by compiling this data and supplementing it with the [year of completion](https://en.wikipedia.org/wiki/Warsaw_Metro).
 
-![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan30/doc/1.png)
-![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan30/doc/3.png)
-
-I have modified the svg file by adding `<g>` elements with functions on `onmousemove`, `onmouseleave` and `onclick`. I have also created a background image out of the svg by adding properties in CSS: `top:0`, `left:0`, `position:fixed`, `min-width:100%` and `min-height:100%`.
+This is an example of the `key-value` object.
 
 ```
-<g cursor="pointer" onmousemove="highlightFoundation()" onmouseleave="dehighlightFoundation()" onclick="foundation()">
-  <polygon id="foundation" class="cls-1" points="407.52 624.4 417.33 636.8 433.35 624.4 420.43 610.46 407.52 624.4"/>
-</g>
+	"stations": [{
+			"name": "Rondo Daszynskiego",
+			"number": 5467700,
+			"year": 2015
+		},
 ```
 
-Then, in JavaScript, I wrote down functions that would hint that certain elements on my page are interactive. `onmousemove` and` onmouseleave` modify the fill color of the interactive markers, while `onclick` selects an image from the `imgArray` and shows it in the image container. In this way, the user can click on any location, and the picture taken in that place will appear.
+Then, in JavaScript, I fetched the information from the `JSON file`, created and returned the promise and loged the data. I have then created a for loop that retrives a paragraph with a simple sentence to properly display relevant info on the page.
 
 ```
-var i = 0;
-function foundation() {
-    var img = document.getElementById("image");
-    document.getElementById("image").src = imgFoundationArray[i].src;
-    i = i+1;
-    if (i == imgFoundationArray.length) {
-        i = 0;
-    }
-}
+stationsItem.textContent = allStations[i].name.concat(" had ", allStations[i].number, " passengers and was constructed in ", allStations[i].year);
 
 ```
-![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan30/doc/2.png)
-
-Each of the "imgArray" contains three photos, and by clicking a multiple times on a specific mark, the user can see more photos taken at that location. To enchance UX, I created a `container__appearingtext` with the text "... and again" that appears when the user hovers over the interactive mark.
-
-```
-document.getElementById("container__appearingtext").style.visibility = "visible";
-document.getElementById("container__appearingtext").style.opacity = 1;
-```
-![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan30/doc/5.png)
-
-Finally, I added the `transition: 1.5s ease-out` to my CSS to smooth out the transitions on the page and make it more refined.
+And here is the work in progress.
+![img](https://github.com/martapienkosz/connectionslab/blob/main/Feb7/doc/initial.png)
 
 &nbsp;
 
 ### Room for improvement
-- Making this website responsive
-- Adding nicer transitions, showing pictures in a more intrestic, dynamic way
-- Adding of sounds from specific locations to make it easier for the user to visualize the location
-
+- 
 ### Cool features
-- `z-index: -1` would be useful when placing an image over an illustration. I liked the aesthetics of the lines covering the photos and decided not to use it in the end
+- 
