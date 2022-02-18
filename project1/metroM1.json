@@ -1,0 +1,152 @@
+
+{
+	"stationsM1": [
+		{
+			"name": "Mlociny",
+			"number": 10760000,
+			"year": 2008,
+            "autobus": 20,
+            "tram": 4
+		},
+        {
+			"name": "Wawrzyszew",
+			"number": 2680000,
+			"year": 2008,
+            "autobus": 4,
+            "tram": 0
+		},
+        {
+			"name": "Stare Bielany",
+			"number": 2720000,
+			"year": 2006,
+            "autobus": 3,
+            "tram": 0
+		},
+        {
+			"name": "Słodowiec",
+			"number": 2920000,
+			"year": 2006,
+            "autobus": 7,
+            "tram": 2
+		},
+        {
+			"name": "Marymont",
+			"number": 6810000,
+			"year": 2006,
+            "autobus": 14,
+            "tram": 3
+		},
+        {
+			"name": "Plac Wilsona",
+			"number": 4000000,
+			"year": 2006,
+            "autobus": 12,
+            "tram": 2
+		},
+        {
+			"name": "Dworzec Gdanski",
+			"number": 7990000,
+			"year": 2003,
+            "autobus": 7,
+            "tram": 5
+		},
+        {
+			"name": "Ratusz Arsenal",
+			"number": 11290000,
+			"year": 2003,
+            "autobus": 23,
+            "tram": 7
+		},
+        {
+			"name": "Swietokrzyska",
+			"number": 13200000,
+			"year": 2003,
+            "autobus": 19,
+            "tram": 4
+		},
+        {
+			"name": "Centrum",
+			"number": 20570000,
+			"year": 1998,
+            "autobus": 30,
+            "tram": 10
+		},
+        {
+			"name": "Politechnika",
+			"number": 12710000,
+			"year": 1995,
+            "autobus": 20,
+            "tram": 3
+		},
+        {
+			"name": "Pole Mokotowskie",
+			"number": 5310000,
+			"year": 1995,
+            "autobus": 8,
+            "tram": 3
+		},
+        {
+			"name": "Raclawicka",
+			"number": 3580000,
+			"year": 1995,
+            "autobus": 3,
+            "tram": 0
+		},
+		{
+			"name": "Wierzbno",
+			"number": 5780000,
+			"year": 1995,
+            "autobus": 5,
+            "tram": 2
+		},
+        {
+			"name": "Wilanowska",
+			"number": 6990000,
+			"year": 1995,
+            "autobus": 18,
+            "tram": 4
+		},
+		{
+			"name": "Sluzew",
+			"number": 8020000,
+			"year": 1995,
+            "autobus": 10,
+            "tram": 0
+		},
+        {
+			"name": "Ursynow",
+			"number": 3560000,
+			"year": 1995,
+            "autobus": 8,
+            "tram": 0
+		},
+        {
+			"name": "Stoklosy",
+			"number": 4640000,
+			"year": 1995,
+            "autobus": 5,
+            "tram": 0
+		},
+        {
+			"name": "Imielin",
+			"number": 4750000,
+			"year": 1995,
+            "autobus": 8,
+            "tram": 0
+		},
+        {
+			"name": "Natolin",
+			"number": 4270000,
+			"year": 1995,
+            "autobus": 4,
+            "tram": 0
+		},
+        {
+			"name": "Kabaty",
+			"number": 4980000,
+			"year": 1995,
+            "autobus": 10,
+            "tram": 0
+		}
+	]
+}

@@ -1,0 +1,29 @@
+body {
+    font-family: "GT Cinetype", "Roboto", Helvetica,sans-serif;
+    background-color: #ebebeb;
+  }
+  
+  #background_image {
+    top:0;
+    left:0; 
+    position:fixed; 
+    min-width:100%;
+    min-height:100%;
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #6b7375;
+  }
+  
+  h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6b7375;
+  }
