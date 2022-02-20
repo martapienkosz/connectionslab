@@ -61,6 +61,31 @@ for (let a=0; a< this.tileAmount; a++) {
 ```
 
 ![img](https://github.com/martapienkosz/connectionslab/blob/main/project1/dcmnt/2.png)
-![img](https://github.com/martapienkosz/connectionslab/blob/main/project1/dcmnt/3.png)
+![img](https://github.com/martapienkosz/connectionslab/blob/main/project1/dcmnt/4.png)
+
+Then I wanted to coordinate the appearance of the image on the screen over time. In the `timeManager` board, I wrote down the seconds Taco mentions the name of the metro station in his song. Then with the condition `if (int (counter) == int (timeManager [tmc]))` I controlled the apperance of a yet another element.
+
+![img](https://github.com/martapienkosz/connectionslab/blob/main/project1/dcmnt/5.png)
+
+Later I extended my `CSS` and `HTML` file with a div on the right, which shows the name of the station along with information about the year it was built and any changes.
+
+```
+function changeStationName(text){
+	document.getElementById("stationName").innerHTML = text;
+}
+
+changeStationName(M1stations[tmc].name);
+```
+
+![img](https://github.com/martapienkosz/connectionslab/blob/main/project1/dcmnt/6.png)
+
+I wanted to develop interactivity and include a user driven event and decided that the color of tiles appearing on each image would be determined by the position of the user's mouse. For this purpose, I created a nested `colors` array that stores vivid colors. Then, depending on the horizontal position of the user's mouse (`mouseX`), the drawn squares take the mapped color.
+
+```
+col = int(map(mouseX, 0, window.innerWidth, 0, colors.length)
+fill(colors[col][0], colors[col][1], colors[col][2], newArray[n]);
+```
+
+![img](https://github.com/martapienkosz/connectionslab/blob/main/project1/dcmnt/7.png)
 
 &nbsp;
