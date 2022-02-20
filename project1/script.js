@@ -9,6 +9,7 @@ let AlbumCover = [];
 
 let confused;
 let instruction;
+let img;
 
 let col;
 let colors = [ [203, 0, 245], [255, 0, 108], [253, 13, 53],[254, 68, 1],[255, 153, 51],[255, 255, 20], [207, 255, 4],[57, 255, 20], [65, 253, 254], [4, 217, 255]]
@@ -16,6 +17,8 @@ let colors = [ [203, 0, 245], [255, 0, 108], [253, 13, 53],[254, 68, 1],[255, 15
 let isDataReady = false;
 let isSongReady = false;
 let imageDrawn = false;
+let songStarted = false;
+
 let counter = 0;
 let timeManager= [7, 9, 12, 20, 22, 29, 36, 39, 44 , 50, 55, 60, 66, 73, 79, 84, 89, 94, 100, 104, 110]
 let tmc = 0;
@@ -39,6 +42,7 @@ window.addEventListener("load", () => {
 
 function preload() { // preloading songs
   song = loadSound("./nast.ogg");
+  img = loadImage("./start_img.png");
   confused = loadImage("./confused.png");
   instruction= loadImage("./instruction.png");
   for(let i=1; i<=16;i++) {
@@ -48,10 +52,8 @@ function preload() { // preloading songs
 
 
 function setup() {
-  song.play();
-  canvas = createCanvas(window.innerWidth*0.8, window.innerHeight);
+  canvas = createCanvas(window.innerWidth*0.7, window.innerHeight);
   canvas.parent("canvas-container");
-  image(confused, 20, window.innerHeight- 50, 100, 30);
   
   function timeIt(){
     counter ++;
@@ -61,9 +63,14 @@ function setup() {
 
 
 function draw() {
+  if(songStarted == false) {
+    image(img, 0, 0, window.innerHeight, window.innerHeight);
+    counter = 0;
+  }
+  console.log("songStarted");
   showInstruction()
   col = int(map(mouseX, 0, window.innerWidth, 0, colors.length))
-  image(confused, 20, window.innerHeight- 50, 100, 30);
+  image(confused, window.innerWidth*0.7-120, window.innerHeight- 50, 100, 30);
   if(isDataReady == true) {
     if(int(counter) == int(timeManager[tmc])) {
         noStroke();
@@ -77,7 +84,7 @@ function draw() {
 
 function showInstruction(){
   document.getElementById("instructions").innerHTML = " ";
-  if((20<mouseX)&&(120>mouseX)&&(window.innerHeight-70<mouseY)&&(window.innerHeight>mouseY)){
+  if((window.innerWidth*0.7-120<mouseX)&&(window.innerWidth*0.7-20>mouseX)&&(window.innerHeight-70<mouseY)&&(window.innerHeight>mouseY)){
     console.log("hit")
     document.getElementById("instructions").innerHTML = 'The width of the appearing image corresponds to the popularity of the metro stations. Completely painted squares indicate possible interchanges to tram lines, half-painted squares indicate possible changes to bus lines. Move the mouse to affect the color change!';
   }
@@ -93,6 +100,15 @@ function changeText1(text){
 
 function changeText2(text){
   document.getElementById("stationText2").innerHTML = text;
+}
+
+function mousePressed() {
+  if(songStarted == false) {
+    song.play();
+    background(223, 220, 211);
+    counter = 0;
+    songStarted = true;
+  }
 }
 
 
@@ -114,7 +130,7 @@ class M1map {
 
   drawImage() {
     let n = 0;
-    let x = random(window.innerWidth*0.8-this.width); // placing an image on a randomly on canvas
+    let x = random(window.innerWidth*0.7-this.width); // placing an image randomly on canvas
     let y = random(window.innerHeight-this.width);
   
     noStroke();
@@ -145,7 +161,7 @@ class M1map {
         changeStationName(M1stations[tmc].name);
         changeText1('The construction of the '+M1stations[tmc].name+' metro station was completed in '+M1stations[tmc].year+'.');
         changeText2('Passengers can easily change to '+M1stations[tmc].autobus+' different bus lines and '+M1stations[tmc].tram+' tram lines.');
-        n++; //
+        n++;
       }
     }
   }
