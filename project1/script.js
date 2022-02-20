@@ -44,7 +44,6 @@ function preload() { // preloading songs
   song = loadSound("./nast.ogg");
   img = loadImage("./start_img.png");
   confused = loadImage("./confused.png");
-  instruction= loadImage("./instruction.png");
   for(let i=1; i<=16;i++) {
     AlbumCover[i-1] = loadImage("./array/"+i+".png");
   }
@@ -67,9 +66,9 @@ function draw() {
     image(img, 0, 0, window.innerHeight, window.innerHeight);
     counter = 0;
   }
-  console.log("songStarted");
+  console.log(col);
   showInstruction()
-  col = int(map(mouseX, 0, window.innerWidth, 0, colors.length))
+  col = int(map(mouseX, 0-window.innerWidth*0.3, window.innerWidth*0.7, 0, colors.length));
   image(confused, window.innerWidth*0.7-120, window.innerHeight- 50, 100, 30);
   if(isDataReady == true) {
     if(int(counter) == int(timeManager[tmc])) {
@@ -85,7 +84,6 @@ function draw() {
 function showInstruction(){
   document.getElementById("instructions").innerHTML = " ";
   if((window.innerWidth*0.7-120<mouseX)&&(window.innerWidth*0.7-20>mouseX)&&(window.innerHeight-70<mouseY)&&(window.innerHeight>mouseY)){
-    console.log("hit")
     document.getElementById("instructions").innerHTML = 'The width of the appearing image corresponds to the popularity of the metro stations. Completely painted squares indicate possible interchanges to tram lines, half-painted squares indicate possible changes to bus lines. Move the mouse to affect the color change!';
   }
 }
@@ -104,9 +102,9 @@ function changeText2(text){
 
 function mousePressed() {
   if(songStarted == false) {
+    counter = 0;
     song.play();
     background(223, 220, 211);
-    counter = 0;
     songStarted = true;
   }
 }
