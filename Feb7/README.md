@@ -26,8 +26,3 @@ And here is the work in progress.
 ![img](https://github.com/martapienkosz/connectionslab/blob/main/Feb7/doc/initial.png)
 
 &nbsp;
-
-### Room for improvement
-- 
-### Cool features
-- 
