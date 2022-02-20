@@ -1,4 +1,4 @@
-## Feb 7 | Data visualization [Webpage](https://martapienkosz.github.io/connectionslab/Feb7/index.html)
+## Feb 7 | Data visualization [Webpage](https://martapienkosz.github.io/connectionslab/project1/index.html)
 &nbsp;
 
 ### Idea
@@ -19,9 +19,6 @@ This is an example of the `key-value` object.
 ```
 
 Then, in JavaScript, I fetched the information from the `JSON file`, created and returned the promise and loged the data. I have then created a for loop that retrives a paragraph with a simple sentence to properly display relevant info on the page: `stationsItem.textContent = allStations[i].name.concat(" had ", allStations[i].number, " passengers and was constructed in ", allStations[i].year);`.
-
-And here is the work in progress.
-![img](https://github.com/martapienkosz/connectionslab/blob/main/Feb7/doc/initial.png)
 
 ### Process
 Using `p5.js`, I have sketched the M1 metro line, taking into account the distinct number of passengers using the station: `M1stations[tmc].year`. After a while, I realized that this idea was quite boring and decided to tweak it a bit.
