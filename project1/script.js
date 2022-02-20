@@ -37,6 +37,10 @@ window.addEventListener("load", () => {
       M1.push(new M1map(M1stations[i].name, M1stations[i].number, M1stations[i].year, M1stations[i].autobus, M1stations[i].tram, M1.length))
     }
   })
+})
+
+
+function preload() { // preloading songs
   song = loadSound("./nast.ogg");
   img = loadImage("./start_img.png");
   confused = loadImage("./confused.png");
@@ -44,18 +48,7 @@ window.addEventListener("load", () => {
   for(let i=1; i<=16;i++) {
     AlbumCover[i-1] = loadImage("./array/"+i+".png");
   }
-})
-
-
-// function preload() { // preloading songs
-//   song = loadSound("./nast.ogg");
-//   img = loadImage("./start_img.png");
-//   confused = loadImage("./confused.png");
-//   instruction= loadImage("./instruction.png");
-//   for(let i=1; i<=16;i++) {
-//     AlbumCover[i-1] = loadImage("./array/"+i+".png");
-//   }
-// }
+}
 
 
 function setup() {
