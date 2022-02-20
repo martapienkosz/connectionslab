@@ -41,7 +41,6 @@ window.addEventListener("load", () => {
 
 
 function preload() { // preloading songs
-  song = loadSound("./nast.ogg");
   img = loadImage("./start_img.png");
   confused = loadImage("./confused.png");
   instruction= loadImage("./instruction.png");
@@ -104,6 +103,7 @@ function changeText2(text){
 
 function mousePressed() {
   if(songStarted == false) {
+    song = loadSound("./nast.ogg");
     song.play();
     background(223, 220, 211);
     counter = 0;
