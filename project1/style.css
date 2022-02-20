@@ -1,6 +1,14 @@
 body {
-    font-family: "GT Cinetype", "Roboto", Helvetica,sans-serif;
-    background-color: #ebebeb;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "GT Cinetype", "Roboto", Helvetica,sans-serif;
+  background-color: #dfdcd3;
+}
+
+  body::-webkit-scrollbar {
+    display: none;
   }
   
   #background_image {
@@ -27,3 +35,28 @@ body {
     font-weight: 400;
     color: #6b7375;
   }
+
+  p {
+    /* word-break: break-all; */
+    white-space: normal;
+}
+
+  .container {
+    display: flex;
+    margin-top: 0%;
+    justify-content: space-between;
+    align-items: top;
+  }
+
+  .canvas-container {
+    /* width: 80%; */
+    margin: 3%;
+  }
+
+  .paragraph {
+    /* width: %; */
+    margin: 3%;
+  }
+
+
+  
