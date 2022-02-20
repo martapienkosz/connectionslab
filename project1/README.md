@@ -30,7 +30,7 @@ Using `p5.js`, I have sketched the M1 metro line, taking into account the distin
 
 I decided to add sound and build the whole experience around [Next Station](https://www.youtube.com/watch?v=TZgBIbqtDnQ) by Taco Hemingway. It is a hip-hop track based on the Warsaw metro system. Taco takes us on a journey along and across Warsaw - from north to south and from east to west, devoting a few lines to each station of both metro lines. I decided that my map of metro stations will be created along with the names of stations sung by Taco stations. Music is thus coordinated with data visualization.
 
-First, I divided the album cover into 16 smaller photos. I have stored them all in `AlbumCover` array. Then, for each subway station, in a random place I drew one of these pictures with a certain width - corresponding to the popularity of the station. The bigger the picture, the more popular the station.
+First, I divided the [album cover](https://github.com/martapienkosz/connectionslab/blob/main/project1/img.jpg) into 16 smaller photos. I have stored them all in `AlbumCover` array. Then, for each subway station, in a random place I drew one of these pictures with a certain width - corresponding to the popularity of the station. The bigger the picture, the more popular the station.
 
 ```
 let x = random(window.innerWidth*0.8-this.width); // placing an image on a randomly on canvas
