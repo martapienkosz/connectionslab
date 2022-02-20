@@ -32,13 +32,13 @@ I decided to add sound and build the whole experience around [Next Station](http
 
 First, I divided the album cover into 16 smaller photos. I have stored them all in `AlbumCover` array. Then, for each subway station, in a random place I drew one of these pictures with a certain width - corresponding to the popularity of the station. The bigger the picture, the more popular the station.
 
-`
+```
 let x = random(window.innerWidth*0.8-this.width); // placing an image on a randomly on canvas
 let y = random(window.innerHeight-this.width);
-___
+//
 this.image = random(AlbumCover);
 image(this.image, x, y, this.width, this.width);
-`
+```
 
 I wanted my project to show the reasons behind popularity of a particular station. I have expanded my dataset and compiled the data on possible interchanges (from [this](https://www.metro.waw.pl/stacja-kabaty-157) website) - I wanted to check if the number of aviable bus and tram lines corresponded to greater popularity.
 
@@ -46,13 +46,13 @@ For each image, I created a grid of 49 tiles and color coded them based on possi
 
 I have first created an array and populated it with values :`240` for tram, `120` for bus and `0` for what's left. Nextly I have shuffled the values `let newArray = shuffle(this.colorArray)` and drew 49 rectangles with specific `tint`.
 
-`
+```
     for (let g=0; g<this.tram;g++) { // array stores colors corresponding to number of trams
       append(this.colorArray, 240);
       this.colorArray.append;
     }
-`
-`
+```
+```
 image(this.image, x, y, this.width, this.width);
 for (let a=0; a< this.tileAmount; a++) {
 	for (let i=0; i< this.tileAmount; i++) { // crating a grid
@@ -60,7 +60,7 @@ for (let a=0; a< this.tileAmount; a++) {
         	rect(x+this.tileSize*a, y+this.tileSize*i, this.tileSize, this.tileSize);
       }
 }
-`
+```
 
 ![img](https://github.com/martapienkosz/connectionslab/blob/main/project1/dcmnt/2.png)
 ![img](https://github.com/martapienkosz/connectionslab/blob/main/project1/dcmnt/3.png)
