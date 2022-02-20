@@ -47,6 +47,9 @@ for (let g=0; g<this.tram;g++) { // array stores colors corresponding to number 
 	this.colorArray.append;
 }
 ```
+
+![img](https://github.com/martapienkosz/connectionslab/blob/main/project1/dcmnt/2.png)
+
 ```
 image(this.image, x, y, this.width, this.width);
 for (let a=0; a< this.tileAmount; a++) {
@@ -57,7 +60,6 @@ for (let a=0; a< this.tileAmount; a++) {
 }
 ```
 
-![img](https://github.com/martapienkosz/connectionslab/blob/main/project1/dcmnt/2.png)
 ![img](https://github.com/martapienkosz/connectionslab/blob/main/project1/dcmnt/4.png)
 
 Then I wanted to coordinate the appearance of the image on the screen over time. In the `timeManager` board, I wrote down the seconds Taco mentions the name of the metro station in his song. Then with the condition `if (int (counter) == int (timeManager [tmc]))` I controlled the apperance of a yet another element.
