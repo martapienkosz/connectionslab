@@ -41,8 +41,8 @@ function preload() { // preloading songs
   song = loadSound("./nast.ogg");
   confused = loadImage("./confused.png");
   instruction= loadImage("./instruction.png");
-  for(let i=1; i<=49;i++) {
-    AlbumCover[i-1] = loadImage("./array/"+i+".jpg");
+  for(let i=1; i<=16;i++) {
+    AlbumCover[i-1] = loadImage("./array/"+i+".png");
   }
 }
 
@@ -143,7 +143,7 @@ class M1map {
         fill(colors[col][0], colors[col][1], colors[col][2], newArray[n]);
         rect(x+this.tileSize*a, y+this.tileSize*i, this.tileSize, this.tileSize);
         changeStationName(M1stations[tmc].name);
-        changeText1('The construction of the Młocin metro station was completed in '+M1stations[tmc].year+'.');
+        changeText1('The construction of the '+M1stations[tmc].name+' metro station was completed in '+M1stations[tmc].year+'.');
         changeText2('Passengers can easily change to '+M1stations[tmc].autobus+' different bus lines and '+M1stations[tmc].tram+' tram lines.');
         n++; //
       }
