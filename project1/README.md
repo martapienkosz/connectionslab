@@ -35,22 +35,20 @@ First, I divided the album cover into 16 smaller photos. I have stored them all 
 ```
 let x = random(window.innerWidth*0.8-this.width); // placing an image on a randomly on canvas
 let y = random(window.innerHeight-this.width);
-//
+
 this.image = random(AlbumCover);
 image(this.image, x, y, this.width, this.width);
 ```
 
 I wanted my project to show the reasons behind popularity of a particular station. I have expanded my dataset and compiled the data on possible interchanges (from [this](https://www.metro.waw.pl/stacja-kabaty-157) website) - I wanted to check if the number of aviable bus and tram lines corresponded to greater popularity.
 
-For each image, I created a grid of 49 tiles and color coded them based on possible changes: the number of pink tiles corresponds to the number of possible changes to the trams, the number of pink tiles with 50% transparency corresponds to the number of possible changes to the bus.
-
-I have first created an array and populated it with values :`240` for tram, `120` for bus and `0` for what's left. Nextly I have shuffled the values `let newArray = shuffle(this.colorArray)` and drew 49 rectangles with specific `tint`.
+For each image, I created a grid of 49 tiles and color coded them based on possible changes: the number of pink tiles corresponds to the number of possible changes to the trams, the number of pink tiles with 50% transparency corresponds to the number of possible changes to the bus. I have first created an array and populated it with values :`240` for tram, `120` for bus and `0` for what's left. Nextly I have shuffled the values `let newArray = shuffle(this.colorArray)` and drew 49 rectangles with specific `tint`.
 
 ```
-    for (let g=0; g<this.tram;g++) { // array stores colors corresponding to number of trams
-      append(this.colorArray, 240);
-      this.colorArray.append;
-    }
+for (let g=0; g<this.tram;g++) { // array stores colors corresponding to number of trams
+	append(this.colorArray, 240);
+	this.colorArray.append;
+}
 ```
 ```
 image(this.image, x, y, this.width, this.width);
