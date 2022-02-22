@@ -39,12 +39,12 @@ image(this.image, x, y, this.width, this.width);
 
 I wanted my project to show the reasons behind popularity of a particular station. I have expanded my dataset and compiled the data on possible interchanges (from [this](https://www.metro.waw.pl/stacja-kabaty-157) website) - I wanted to check if the number of aviable bus and tram lines corresponded to greater popularity.
 
-For each image, I created a grid of 49 tiles and color coded them based on possible changes: the number of pink tiles corresponds to the number of possible changes to the trams, the number of pink tiles with 50% transparency corresponds to the number of possible changes to the bus. I have first created an array and populated it with values :`240` for tram, `120` for bus and `0` for what's left. Nextly I have shuffled the values `let newArray = shuffle(this.colorArray)` and drew 49 rectangles with specific `tint`.
+For each image, I created a grid of 49 tiles and color coded them based on possible changes: the number of pink tiles corresponds to the number of possible changes to the trams, the number of pink tiles with 50% transparency corresponds to the number of possible changes to the bus. I have first created an array and populated it with values :`240` for tram, `120` for bus and `0` for what's left. Nextly I have shuffled the values `let newTintArray = shuffle(this.tintArray)` and drew 49 rectangles with specific `tint`.
 
 ```
-for (let g=0; g<this.tram;g++) { // array stores colors corresponding to number of trams
-	append(this.colorArray, 240);
-	this.colorArray.append;
+for (let g=0; g<this.tram;g++) { // array stores tint values corresponding to number of trams
+	append(this.tintArray, 240);
+	this.tintArray.append;
 }
 ```
 
@@ -53,10 +53,10 @@ for (let g=0; g<this.tram;g++) { // array stores colors corresponding to number 
 ```
 image(this.image, x, y, this.width, this.width);
 for (let a=0; a< this.tileAmount; a++) {
-	for (let i=0; i< this.tileAmount; i++) { // crating a grid
-		fill(colors[col][0], colors[col][1], colors[col][2], newArray[n]);
+	for (let i=0; i< this.tileAmount; i++) { // crating a grid of tiles
+		fill(accentColors[accessAccentCol][0], accentColors[accessAccentCol][1], accentColors[accessAccentCol][2], newTintArray[n]);
         	rect(x+this.tileSize*a, y+this.tileSize*i, this.tileSize, this.tileSize);
-      }
+	}
 }
 ```
 
@@ -69,7 +69,7 @@ Then I wanted to coordinate the appearance of the image on the screen over time.
 Later I extended my `CSS` and `HTML` file with a div on the right, which shows the name of the station along with information about the year it was built and any changes.
 
 ```
-function changeStationName(text){
+function changeStationName(text){ // displaying different infromation depending on the metro station mentioned
 	document.getElementById("stationName").innerHTML = text;
 }
 
@@ -78,13 +78,33 @@ changeStationName(M1stations[tmc].name);
 
 ![img](https://github.com/martapienkosz/connectionslab/blob/main/project1/dcmnt/6.png)
 
-I wanted to develop interactivity and include a user driven event and decided that the color of tiles appearing on each image would be determined by the position of the user's mouse. For this purpose, I created a nested `colors` array that stores vivid colors. Then, depending on the horizontal position of the user's mouse (`mouseX`), the drawn squares take the mapped color.
+I wanted to develop interactivity and include a user driven event and decided that the color of tiles appearing on each image would be determined by the position of the user's mouse. For this purpose, I created a nested `accentColors` array that stores vivid colors. Then, depending on the horizontal position of the user's mouse (`mouseX`), the drawn squares take the mapped color.
 
 ```
-col = int(map(mouseX, 0, window.innerWidth, 0, colors.length)
-fill(colors[col][0], colors[col][1], colors[col][2], newArray[n]);
+accessAccentCol = int(map(mouseX, 0-window.innerWidth*0.3, window.innerWidth*0.7, 0, accentColors.length));
+fill(accentColors[accessAccentCol][0], accentColors[accessAccentCol][1], accentColors[accessAccentCol][2], newTintArray[n]);
 ```
 
 ![img](https://github.com/martapienkosz/connectionslab/blob/main/project1/dcmnt/7.png)
+
+### UX Experience
+Lastly I have added a "confused" image that displays instructions on hover. I have also loaded a `initialImg` that encourages users to interact with the page. This interaction in necessary for the song to play.
+
+```
+function showInstruction(){ // displaying text when hover over "confused"
+	document.getElementById("instructions").innerHTML = "";
+	if((window.innerWidth*0.7-120 < mouseX) && (window.innerWidth*0.7-20 > mouseX) && (window.innerHeight-70 < mouseY) && (window.innerHeight > mouseY)){
+	document.getElementById("instructions").innerHTML = 'The width...';
+  }
+}
+```
+
+![img](https://github.com/martapienkosz/connectionslab/blob/main/project1/dcmnt/9.png)
+
+### Potential next steps
+- Expanding on the interactions
+- Ensuring a proper resize with canvas, currently it only works on the refresh.
+- Optimizing for the mobile screen
+
 
 &nbsp;
