@@ -99,6 +99,8 @@ function showInstruction(){ // displaying text when hover over "confused"
 }
 ```
 
+![img](https://github.com/martapienkosz/connectionslab/blob/main/project1/dcmnt/9.png)
+
 ### Potential next steps
 - Expanding on the interactions
 - Ensuring a proper resize with canvas, currently it only works on the refresh.
