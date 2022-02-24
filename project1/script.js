@@ -56,7 +56,6 @@ function setup() {
     counter ++;
   }
   setInterval(timeIt, 1000); //native function 1000ms =1 s
-  ellipse(mouseX, mouseY, 16, 16);
 }
 
 
