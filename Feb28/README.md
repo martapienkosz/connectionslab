@@ -6,11 +6,11 @@ Since this is my first time using `Node.js`, I decided to create a very simple w
 This is an example of the key-value object.
 
 ```
-N : {
-  name: "Norway",
-  gold : 16,
-  silver : 8,
-  bronze: 13
+NL : {
+  name: "Netherlands",
+  gold : 8,
+  silver : 5,
+  bronze: 4
 },
 ```
 
