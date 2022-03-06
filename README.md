@@ -14,7 +14,7 @@ Week three assignemt | Feb 7 - Feb 13
 Week four and five assignemnt | Feb 14 - Feb 27
 - Project 1: Następna Stacja [Data vizualization](https://martapienkosz.github.io/connectionslab/project1/index.html) & [documentation](https://github.com/martapienkosz/connectionslab/tree/main/project1)
 
-Week six
-- [documenation](https://github.com/martapienkosz/connectionslab/blob/main/Feb28/README.md)
+Week six | Feb 28 - March 6
+- Node-Express App [documenation](https://github.com/martapienkosz/connectionslab/blob/main/Feb28/README.md)
 
 
