@@ -26,7 +26,7 @@ for (countryName in medals) {
     console.log("target");
   }
 }
-``
+```
 However, I realized that it would be easier to display the country flags instead and show the data when clicking on the image. This reduces the possibility of errors and is more user-friendly.
 
 ![img](https://github.com/martapienkosz/connectionslab/blob/main/Feb28/dcmnt/0.png)
@@ -54,7 +54,7 @@ document.addEventListener("click", (e) => {
 
 Finally, I worked on styling and modifying the `innerHTML` to display the data appropriately. I have decided on a playful yet minimalist design that uses emoticons. By using `@media screen and (max-width: 767px)` I have ensured that the website looks good both on desktop and mobile.
   
-![img](https://github.com/martapienkosz/connectionslab/blob/main/Feb28/dcmnt/3.png)![img](https://github.com/martapienkosz/connectionslab/blob/main/Feb28/dcmnt/2.png)  
+![img](https://github.com/martapienkosz/connectionslab/blob/main/Feb28/dcmnt/3.png | height=400)![img](https://github.com/martapienkosz/connectionslab/blob/main/Feb28/dcmnt/2.png | height=400)  
 
 ### Cool features
 - I have added an icon: `<link rel="shortcut icon" href="images/logo.ico"/>`
