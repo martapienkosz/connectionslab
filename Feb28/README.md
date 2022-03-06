@@ -51,7 +51,7 @@ document.addEventListener("click", (e) => {
 
 Finally, I worked on styling and modifying the `innerHTML` to display the data appropriately. I have decided on a playful yet minimalist design that uses emoticons. By using `@media screen and (max-width: 767px)` I have ensured that the website looks good both on desktop and mobile.  
 
-<img src="https://github.com/martapienkosz/connectionslab/blob/main/Feb28/dcmnt/3.png" height="450"> <img src="https://github.com/martapienkosz/connectionslab/blob/main/Feb28/dcmnt/2.png" height="450">
+<img src="https://github.com/martapienkosz/connectionslab/blob/main/Feb28/dcmnt/3.png" height="400"> <img src="https://github.com/martapienkosz/connectionslab/blob/main/Feb28/dcmnt/2.png" height="400">
 
 ### Cool features
 - I learned how to `use e.target` thanks to which I didn't have to copy and paste 10 different functions specific for each flag
