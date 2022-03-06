@@ -1,7 +1,4 @@
 ## Feb 28 | Node-Express app
-### Wireframe
-![img](https://github.com/martapienkosz/connectionslab/blob/main/Jan24/doc/6.jpg)
-&nbsp;
 
 ### Process
 Since this is my first time using `Node.js`, I decided to create a very simple website that uses the fetched API. I collected data on the best countries of the Beijing 2022 Winter Olympics and stored information on the number of medals they won.
@@ -54,7 +51,7 @@ document.addEventListener("click", (e) => {
 
 Finally, I worked on styling and modifying the `innerHTML` to display the data appropriately. I have decided on a playful yet minimalist design that uses emoticons. By using `@media screen and (max-width: 767px)` I have ensured that the website looks good both on desktop and mobile.
   
-![img](https://github.com/martapienkosz/connectionslab/blob/main/Feb28/dcmnt/3.png | height=400)![img](https://github.com/martapienkosz/connectionslab/blob/main/Feb28/dcmnt/2.png | height=400)  
+![img](https://github.com/martapienkosz/connectionslab/blob/main/Feb28/dcmnt/3.png | height=400) ![img](https://github.com/martapienkosz/connectionslab/blob/main/Feb28/dcmnt/2.png | height=400)  
 
 ### Cool features
 - I have added an icon: `<link rel="shortcut icon" href="images/logo.ico"/>`
