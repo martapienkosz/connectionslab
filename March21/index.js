@@ -24,21 +24,10 @@ io.sockets.on("connection", (socket) => {
     })
 })
 
-// connect to the server via sockets
-
 // server listening on port
 server.listen(8800, () => {
   console.log("server is up and running")
 })
-
-
-
-
-
-
-
-
-
 
 // Client has to send the message to the server --> EMIT
 // Server has to receive and process this information --> ON
