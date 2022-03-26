@@ -5,8 +5,10 @@ For my first website using socket.io I have decided to created a simple multi-pe
 
 1. I have created new folder (`npm init`), installed packages (`npm install -s express; npm install -s socket.io`), added script in package.json (`"start" : "nodemon index.js"`).
 2. In index.js I have set up the server so it serves the public folder (`app.use('/', express.static('public'))`), included the http server (`let http = require('http'); let server = http.createServer(app)`)
-3. Created `index.html` and `app.js` and included `p5.js` libraries (`<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>`, 
-`<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>`)
+3. Created `index.html` and `app.js` and included `p5.js` libraries 
+  a. `<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>`
+  b. `<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>`
+4. 
 
 
 
