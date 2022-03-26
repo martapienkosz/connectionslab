@@ -1,4 +1,4 @@
-## March 21 | Real-time + Multi-Person - Sockets and Socket.io
+## March 21 | Real-time + Multi-Person [App](https://pear-safe-cupboard.glitch.me)- Sockets and Socket.io
 
 ### Setup
 For my first website using socket.io I have decided to created a simple multi-person music instrument.
@@ -55,3 +55,15 @@ socket.on("soundDataFromServer", (data) => {
 ```
 
 ![img](https://github.com/martapienkosz/connectionslab/blob/main/March21/dcmt/one.png)
+
+
+### Glitch
+1. Create a new repo with all the files (- node_modules)
+2. Paste the url of repo into the Glitch (New Project --> Import from git)
+3. Change `nodemon index.js` to `node index.js` in `package.json` and add a variable port in index.js
+```
+let port = process.env.PORT || 3000;
+server.listen(port, () => {
+    console.log("Server listening at port: " + port);
+});
+```
