@@ -45,7 +45,7 @@ io.sockets.on("connection", (socket) => {
 })
 ````
 
-Lastly I enabled client to access the information back from the server and started the playSoundWithData(data) function that in adition to playing sound draws a circle in a random place with the the diameter corresponding to the octave number (`ellipse(data.x1, data.y1, (data.a)*30, (data.a)*30)`).
+Lastly I enabled client to access the information back from the server and started the `playSoundWithData(data)` function that in adition to playing sound draws a circle in a random place with the the diameter corresponding to the octave number (`ellipse(data.x1, data.y1, (data.a)*30, (data.a)*30)`).
 
 ```
 socket.on("soundDataFromServer", (data) => {
