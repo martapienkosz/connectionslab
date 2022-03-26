@@ -54,4 +54,4 @@ socket.on("soundDataFromServer", (data) => {
 })
 ```
 
-![img](https://github.com/martapienkosz/connectionslab/edit/main/March21/dcmt/one.png)
+![img](https://github.com/martapienkosz/connectionslab/blob/main/March21/dcmt/one.png)
