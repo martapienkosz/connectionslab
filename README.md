@@ -20,6 +20,9 @@ Week six | Feb 28 - March 6
 Week eight | March 21 - March 27
 - Real-time + Multi-Person [App](https://pear-safe-cupboard.glitch.me) and  [documenation](https://github.com/martapienkosz/connectionslab/tree/main/March21)
 
+Week nine and ten | March 28 - April 10
+- Project 2 website, [repo and documentation](https://github.com/martapienkosz/symphonizer/blob/main/README.md).
+
 
 
 
