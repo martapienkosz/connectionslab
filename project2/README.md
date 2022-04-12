@@ -1,4 +1,5 @@
 ## April 4 | Symphonizer
+[Website](https://symphonizer2.glitch.me) and [glitch repo](https://glitch.com/edit/#!/symphonizer2).
 
 ### Idea
 Building on Marta’s socket.io app, for out project 2 we want to create a digital web-based instrument that produce sound on the key press. We would like to extend the sound library and include subtle animations coded with P5.js. [Patatap Website](https://patatap.com) serves as our main inspiration for this project. We would like to add the functionality of rooms with a maximum of 2 people and an unlimited number of observers, so that music can be composed without unnecessary interactions from many users. We would also like to expand the audiovisual options, allowing the user to choose from a calm (forest/jazz) or more lively (fire/metalic) symphony.
