@@ -110,6 +110,8 @@ Aakarsh's learnings
 - All in all, the experience of creating a cohesive multiplayer environment was something which I didn't think I'd be able to do but everything
 from slicing the roomCode from address bar to making people spectators made me realize I had created a very usable multiplayer app.
 
+(The plan is to even ship it out on a symphonizer.io domain in the future)
+
 
 And here is a snapshot from the showcase!
 ![img](https://github.com/martapienkosz/symphonizer/blob/main/dcmd/showcase.png)
