@@ -12,17 +12,20 @@ We have agreed on the general feel of our application, designed a prototype of i
 
 We have started off with the general set up for sockets. Later Aakarsh has been working on the logic behind the rooms (join/create room, limit no of users, add spectators --> elaborate @Aakarsh).
 
-**Join/Create**
+
+#### Join/Create
 
 When the user selects the settings in the home page and clicks on the create button, a create room event is emitted with the information about the room as data. Then in the backend, a new entry is created in the database with those settings. The ID of that entry in the database becomes the room code of that room.
 
 In the home page, the join is a simple redirect. When you reach the link which is of the format `symphonizer2.glitch.me/roomCode` is where the actual logic starts taking place. The front end slices the roomcode out from the link and then sends it to the back end. The back end then verifies if this room exists or not. If it doesn't, then it sends an invalid room event back to our client. If it does, then the count of the room player goes up by 1 and our client gets information about the room like what it's settings are.
 
-**Gameplay**
+
+#### Gameplay
 
 When a client clicks a button in the room, the keycode gets emitted to all the clients (including the sender) in that room. Upon receving this event, every client renders the animation and the sound.
 
-**User Limiting**
+
+#### User Limiting
 There is a constant variable at the top of the index.js file which decides how many players max are allowed in one room. We use that every 
 time a person joins a room. If they exceed the max player count, then they are given the role of spectator. If not, then the role of player.
 The animations simply don't render on front end if the user has a class of spectator. They can just see all the other players perform.
@@ -72,6 +75,7 @@ The piano, synthesizers, organs etc. were composed in FL Studio using the Serum 
 
 <img src="https://i.imgur.com/MOBZJp6.png">
 
+
 ### Frontend
 
 Lastly, Marta was working on the frontend. We wanted the `menu` section to be super intuitive, allowing users to quickly get to the` playground` page. We divided the window into `create a room` and `join the room` sections. During testing, we asked a few users if they would prefer to name their room or just get a random code. Users had no preference, and after looking at games like Scribble and Kahoot we have settled on choosing an authentic, randomly generated room ID.
@@ -95,6 +99,7 @@ socket.on("changeVisuals", (dataVisuals) => {
 Marta's learnings
 - Getting familar with p5.js, animations and concepts of classes
 - Designing homepage with radio buttons, input box, unever number of text & content
+- Socket management and infomation flow
 - Communication and collboration (github & glitch / sharing code / meeting up / settling on idea)
 
 Aakarsh's learnings
