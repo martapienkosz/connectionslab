@@ -1,4 +1,4 @@
-## April 4 | Symphonizer
+## Project 2 | Symphonizer.io
 [Website](https://symphonizer2.glitch.me) and [glitch repo](https://glitch.com/edit/#!/symphonizer2).
 
 ### Idea
