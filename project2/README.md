@@ -1,4 +1,4 @@
-## April 4 | Symphonizer
+## Project 2 | Symphonizer.io
 [Website](https://symphonizer2.glitch.me) and [glitch repo](https://glitch.com/edit/#!/symphonizer2).
 
 ### Idea
@@ -12,8 +12,23 @@ We have agreed on the general feel of our application, designed a prototype of i
 
 We have started off with the general set up for sockets. Later Aakarsh has been working on the logic behind the rooms (join/create room, limit no of users, add spectators --> elaborate @Aakarsh).
 
-____________________________* LOGIC BEHIND ROOMS (JOIN/CREATE)
-____________________________* LIMITING NO OF USERS / SPECTATORS
+
+#### Join/Create
+
+When the user selects the settings in the home page and clicks on the create button, a create room event is emitted with the information about the room as data. Then in the backend, a new entry is created in the database with those settings. The ID of that entry in the database becomes the room code of that room.
+
+In the home page, the join is a simple redirect. When you reach the link which is of the format `symphonizer2.glitch.me/roomCode` is where the actual logic starts taking place. The front end slices the roomcode out from the link and then sends it to the back end. The back end then verifies if this room exists or not. If it doesn't, then it sends an invalid room event back to our client. If it does, then the count of the room player goes up by 1 and our client gets information about the room like what it's settings are.
+
+
+#### Gameplay
+
+When a client clicks a button in the room, the keycode gets emitted to all the clients (including the sender) in that room. Upon receving this event, every client renders the animation and the sound.
+
+
+#### User Limiting
+There is a constant variable at the top of the index.js file which decides how many players max are allowed in one room. We use that every 
+time a person joins a room. If they exceed the max player count, then they are given the role of spectator. If not, then the role of player.
+The animations simply don't render on front end if the user has a class of spectator. They can just see all the other players perform.
 
 
 ### Animations
@@ -54,7 +69,11 @@ socket.on("keyPressed", (data) => {
 
 Aakarsh has composed 3 libraries of sounds, each of which contains 6 notes. We have settled on the futuristic, upbeat and orchestral modes and preloaded the soundtracks so there were no unnecessary delay.
 
-____________________________* INCLUDE SCREENSHOT OF THE SOFTWARE AND MENTION THE NAME OF IT + HOW DID U COMPOSE THINGS
+The sounds were assembled from various drum packs and MIDI kits Aakarsh had in his computer already.
+The drums are mainly chops from samples Aakarsh had lying around in his computer from previous music project. 
+The piano, synthesizers, organs etc. were composed in FL Studio using the Serum plugin.
+
+<img src="https://i.imgur.com/MOBZJp6.png">
 
 
 ### Frontend
@@ -80,14 +99,18 @@ socket.on("changeVisuals", (dataVisuals) => {
 Marta's learnings
 - Getting familar with p5.js, animations and concepts of classes
 - Designing homepage with radio buttons, input box, unever number of text & content
+- Socket management and infomation flow
 - Communication and collboration (github & glitch / sharing code / meeting up / settling on idea)
 
 Aakarsh's learnings
-- one
-- two
-- three
+- I learnt how to work with NEDB
+- I learnt how to execute a lot of events with sockets + stuff like broadcasting and rooms as well
+- I learnt code optimization, the idea of making the effects a seperate class file with their own states was something which I really liked
+- I got better with using music samples
+- All in all, the experience of creating a cohesive multiplayer environment was something which I didn't think I'd be able to do but everything
+from slicing the roomCode from address bar to making people spectators made me realize I had created a very usable multiplayer app.
 
-____________________________* ADD YOUR LEARNINGS
+(The plan is to even ship it out on a symphonizer.io domain in the future)
 
 
 And here is a snapshot from the showcase!
