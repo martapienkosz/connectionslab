@@ -31,8 +31,7 @@ I have also replaced a texture of a yellow color sliced images form my first pro
 ```
 let texture = new THREE.TextureLoader().load( "array/"+i+".png" );
 let material = new THREE.MeshBasicMaterial({map: texture});
-```
-![img](https://github.com/martapienkosz/connectionslab/blob/main/April11/dcmt/2.png)  
+``` 
 
 I have also tried to incorporate `OrbitControls` modules so that camera moves, but unfortunately I failed to import them both through CDN and npm. I am looking for some sollutions!
 
