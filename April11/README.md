@@ -14,6 +14,8 @@ mesh.scale.set(1,2,1)
 scene.add(mesh);
 ```
 
+![img](https://github.com/martapienkosz/connectionslab/blob/main/April18/dcmt/1.png)
+
 Later on, I have played with event listener so that the box changes its geometry on `mousemove` or `click`. I have defined the positon of the client mouse position and used `raycaster` to check for interactions. 
 
 ```
@@ -24,8 +26,6 @@ raycaster.setFromCamera(mouse, camera)
 
 I have used `gsap timelineMax` function to animate the box on  `click`. Finally, I have created more instances of the box, positioned in the random places and passed them to the `function onMouseMove(event)`.
 
-![img](https://github.com/martapienkosz/connectionslab/blob/main/April11/dcmt/1.png)  
-
 I have also replaced a texture of a yellow color sliced images form my first project.
 
 ```
@@ -33,9 +33,8 @@ let texture = new THREE.TextureLoader().load( "array/"+i+".png" );
 let material = new THREE.MeshBasicMaterial({map: texture});
 ```
 
-![img](https://github.com/martapienkosz/connectionslab/blob/main/April11/dcmt/2.png)  
-
 I have also tried to incorporate `OrbitControls` modules so that camera moves, but unfortunately I failed to import them both through CDN and npm. I am looking for some sollutions!
 
-![img](https://github.com/martapienkosz/connectionslab/blob/main/April11/dcmt/123.gif)  
+
+![img](https://github.com/martapienkosz/connectionslab/blob/main/April18/dcmt/2.png)  
 
