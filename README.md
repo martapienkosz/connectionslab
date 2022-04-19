@@ -23,6 +23,5 @@ Week eight | March 21 - March 27
 Week nine and ten | March 28 - April 10
 - Project 2 [website](https://symphonizer2.glitch.me), [glitch repo](https://glitch.com/edit/#!/symphonizer2) and [documentation](https://github.com/martapienkosz/connectionslab/tree/main/project2).
 
-
-
-
+Week eleven | April 11 - 17
+- Website with Three.js and [documentation](https://github.com/martapienkosz/connectionslab/tree/main/April18)
