@@ -17,8 +17,10 @@ io.sockets.on("connection", (socket) => {
         console.log("socket has been disconnected", socket.id)
     })
 
+    // receive and process information from client
     socket.on("interactionData", (data) => {
         console.log(data);
+        // emit information to ALL clients
         io.sockets.emit("interactionDataFromServer", data)
     })
 })
@@ -27,8 +29,3 @@ io.sockets.on("connection", (socket) => {
 server.listen(8801, () => {
   console.log("server is up and running")
 })
-
-// Client has to send the message to the server --> EMIT
-// Server has to receive and process this information --> ON
-// Server emits information to ALL clients
-// Client does soemthing when it gets information back --> ON

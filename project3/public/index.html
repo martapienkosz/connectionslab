@@ -14,19 +14,19 @@
   </head> 
   <body>
     <a-scene cursor="rayOrigin: mouse">
-      
-     
-        <a-box position="0 0 0" rotation="0 0 0" color="tomato" depth="1" height="1" target-marker width="3"></a-box>
+        <!-- placing red spheres on the pinkish box -->
+        <a-box position="0 0 0" rotation="0 0 0" color="tomato" depth="1" height="1" width="3" target-marker></a-box>
         <a-sphere position="0 0.85 0" rotation="0 0 0" color="yellow" radius="0.3"></a-sphere>
         <a-sphere position="-0.7 0.85 0" rotation="0 0 0" color="green" radius="0.3"></a-sphere>
+        <!-- chaning color of the blue ball -->
         <a-sphere position="0.7 0.85 0" rotation="0 0 0" color="blue" radius="0.3" color-toggle></a-sphere>
-        <!-- <a-entity position="0 2 0" text="value: Hello World;"></a-entity> -->
-      
-      <a-entity id="rig">
-        <a-entity camera position="0 2 0" look-controls wasd-controls>
-          <a-cursor id="cursor" raycaster fuse="true" fusetimeout="3000"></a-cursor>
-        </a-entity>
+        
+        <a-entity id="rig">
+            <a-entity camera position="0 2 0" look-controls wasd-controls>
+                <a-cursor id="cursor" raycaster fuse="true" fusetimeout="3000"></a-cursor>
+            </a-entity>
       </a-entity>
+
     </a-scene>
   </body>
 </html>

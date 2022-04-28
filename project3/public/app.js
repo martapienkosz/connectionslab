@@ -13,15 +13,17 @@ AFRAME.registerComponent('color-toggle', {
     let el = this.el;
     
     this.toggleColor = function() {
-    //   el.setAttribute('color', 'orange');
+      // el.setAttribute('color', 'orange');
       let clickData = "blue ball click event";
-      //emit socket on click
+      // emit socket data on click
       socket.emit("interactionData", clickData);
     }
 
-    this.changeToGreen = function(e) {
+    this.changeToGreenAndAddSpheres = function(e) {
         el.setAttribute('color', 'green');
+        console.log("works until here") // code works
         let p = e.detail.intersection.point;
+        console.log("... and crashes") // and crashes here
            let scene = document.querySelector("a-scene");
            let newMark = document.createElement("a-entity");
 
@@ -29,21 +31,18 @@ AFRAME.registerComponent('color-toggle', {
                primitive: "sphere",
            });
            newMark.setAttribute("position", p);
+           newMark.setAttribute("material", "color: red");
+           newMark.setAttribute("scale", ".2 .2 .2");
            scene.appendChild(newMark);
 
     }
-    //on socket receive
-    socket.on('interactionDataFromServer', this.changeToGreen);
+    // on socket receive run function
+    socket.on('interactionDataFromServer', this.changeToGreenAndAddSpheres);
     this.el.addEventListener('click', this.toggleColor);
   },
-  
-  // INBUITLR REMOVE
-  remove: function() {
-    this.el.removeEventListener('click', this.toggleColor);
-  }
 })
 
-
+// without sockets this one works
 AFRAME.registerComponent('target-marker', {
 
     // INIT COMPONENT FUNCTIONS
