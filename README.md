@@ -24,7 +24,7 @@ Week nine and ten | March 28 - April 10
 - Project 2 [website](https://symphonizer2.glitch.me), [glitch repo](https://glitch.com/edit/#!/symphonizer2) and [documentation](https://github.com/martapienkosz/connectionslab/tree/main/project2).
 
 Week eleven | April 11 - 17
-- Website with Three.js and [documentation](https://github.com/martapienkosz/connectionslab/tree/main/April18)
+- Website with Three.js and [documentation](https://github.com/martapienkosz/connectionslab/tree/main/April11)
 
 Week twelve and thirteen | April 18 - May 12
 - [DigitalGhost](https://digitalghost.glitch.me) with Three.js and mlt.js and [documentation](https://github.com/martapienkosz/connectionslab/tree/main/project3)
