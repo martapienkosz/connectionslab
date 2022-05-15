@@ -142,6 +142,6 @@ socket.on("camPos", (data) => {
 ```
 
 
-Cool!
+And the final outcome:
+![img](https://github.com/martapienkosz/glitchify/blob/main/dcmt/final.gif)
 
-![img](https://github.com/martapienkosz/connectionslab/blob/main/project3/dcmt/artsy.png)
