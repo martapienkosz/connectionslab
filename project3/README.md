@@ -5,7 +5,9 @@
 I must admit that I struggled a lot with coming up with an idea for this assignment. At first, I wanted to create a cute cozy coffeeshop in A-Frame and allow users to interact by making a clay object. I created a 3d model and tested socket connections.
 
 ![img](https://github.com/martapienkosz/connectionslab/blob/main/project3/dcmt/coffe.png)
-Everything worked fine until I started to intensively add new "spheres", instances of the clay. Everything started to excessively lag. **Learnings**: Getting familiar with A-Frame!
+Everything worked fine until I started to intensively add new "spheres", instances of the clay. Everything started to excessively lag.
+
+**Learnings**: Getting familiar with A-Frame!
 
 ![img](https://github.com/martapienkosz/connectionslab/blob/main/project3/dcmt/clay.png)
 
@@ -27,7 +29,9 @@ this.addMarker = function(e) {
   this.el.addEventListener("click", this.addMarker)},
 ```
 
-I decided to reevaluate my idea and create a city in VR that tells the story of its inhabitants. Before joining the link, users would be able share a story or gossip. For this purpose, I have explored the functionality of `rooms.db`. While in the city, users would be able to read other people's stories (by selecting the room with light turned on) or add their own story (by selecting the room with light turned off). I have added the [Gui library](https://rdub80.github.io/aframe-gui/) from A-Frame to allow this interaction and display text. After a while, however, I figured the typing feature would not work very well in VR, so the interaction would be lost somehow. **Learnings**: Getting familiar with Gui Library
+I decided to reevaluate my idea and create a city in VR that tells the story of its inhabitants. Before joining the link, users would be able share a story or gossip. For this purpose, I have explored the functionality of `rooms.db`. While in the city, users would be able to read other people's stories (by selecting the room with light turned on) or add their own story (by selecting the room with light turned off). I have added the [Gui library](https://rdub80.github.io/aframe-gui/) from A-Frame to allow this interaction and display text. After a while, however, I figured the typing feature would not work very well in VR, so the interaction would be lost somehow.
+
+**Learnings**: Getting familiar with Gui Library
 
 Finally I have setttled on code generated art.
 
@@ -143,5 +147,23 @@ socket.on("camPos", (data) => {
 
 
 And the final outcome:
-![img](https://github.com/martapienkosz/glitchify/blob/main/dcmt/final.gif)
+![img](https://github.com/martapienkosz/connectionslab/blob/main/project3/dcmt/final.gif)
 
+
+
+### Learnings
+Marta's learnings
+- Getting familar with `Aframe.js` as well as `Three.js`
+- Learning about BufferGeometry
+- Getting familiar with Gui Libraries for Aframe and Three.js
+- Getting familar with `ml5` library
+- Learning how to execute and manage events with sockets
+- Exploring conceptual art on website
+
+
+### Next steps
+It seems to me that this generative, interactive art doesn't belong to the website and I should have chosen other medium to present it. As was noted by professor, it would be interesting to transform this piece of code into an instalation.
+
+
+And here is a snapshot from the showcase!
+![img](https://github.com/martapienkosz/connectionslab/blob/main/project3/dcmt/showcase.png)
